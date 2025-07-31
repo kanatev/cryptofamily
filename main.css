@@ -1,0 +1,528 @@
+body {
+  margin: 0;
+  display: grid;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background: #3e5a70;
+  font-family: "Nunito";
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+.logo {
+  margin-left: 20px;
+  color: white
+}
+
+.website-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: #314659;
+  border-color: white;
+  border-width: 1px;
+  border-style: none none solid none;
+  border-radius: 0.3em;
+}
+
+.connected-wallet-container {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  display: none;
+}
+
+.parent-for-connected-control {
+  display: flex;
+  width: 50%;
+}
+
+.connected-wallet-text {
+  flex: 1;
+  border: 1px solid white;
+  margin: 10px;
+  color: white
+}
+
+.disconnectButton {
+  flex: 0;
+  background-image: url(/img/logout-128.gif);
+  background-size:auto 100%;
+  min-width: 20px;
+  text-decoration: none;
+  padding: 0.3em;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 9999;
+  margin: 10px;
+}
+
+.base-input {
+  background: #3e5a70;
+  color: white;
+  min-width: 320px;
+  text-align: center;
+  min-height: 25px;
+  border-radius: 0.3em;
+}
+
+.network-input {
+  background: #243a4b;
+  color: white;
+  min-width: 320px;
+  text-align: center;
+  min-height: 25px;
+  border-radius: 0.3em;
+  margin-top: 20px;
+}
+
+.base-container {
+  box-shadow: 10px 10px 30px rgba(137, 27, 27, 0.1);
+  border-radius: 0.7em;
+  padding: 4em;
+  background: #213345;
+  color: white;
+  min-width: 500px;
+  text-align: center;
+  margin: 15px 0 auto 0;
+}
+
+.onboard-container {
+  box-shadow: 10px 10px 30px rgba(137, 27, 27, 0.1);
+  border-radius: 0.7em;
+  padding: 4em;
+  background: #213345;
+  color: white;
+  min-width: 500px;
+  text-align: center;
+  margin: 10px 0 auto 0;
+}
+
+.account-addresses-block, 
+.account-balance-block, 
+.account-timeout-block, 
+.last-activity-block,
+.heir-access-block,
+.account-roles-block {
+  text-align: center;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.3em;
+  padding: 0.7em;
+  margin-top: 2em;
+}
+
+.base-page-container {
+  box-shadow: 10px 10px 30px rgba(137, 27, 27, 0.1);
+  border-radius: 0.7em;
+  padding: 0 4em 30px 4em;
+  background: #213345;
+  min-width: 500px;
+  text-align: center;
+  color: white;
+  margin: 10px;
+  display: none;
+  min-height: 100vh;
+}
+
+.right-button{
+  right: 30px;
+  margin-left: auto;
+}
+
+.centered-button {
+  margin: 0 auto;
+}
+
+.back-to-accounts-button,
+.back-to-accounts-button2 {
+  left: 30px;
+  margin-right: auto;
+}
+
+.show-new-inh-acc-button,
+.change-access-period-button,
+.big-button {
+  width: 100%;
+}
+
+
+.base-button:disabled {
+  background-color: #465663;
+}
+
+.flex-button {
+  flex: 1;
+}
+
+.tall-button {
+  height: 44px;
+}
+
+.base-button,
+.show-new-inh-acc-button,
+.change-access-period-button,
+.back-to-accounts-button,
+.back-to-accounts-button2 {
+  background-color: #2e546c;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  outline: none;
+  padding: 8px .8em;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.base-button:hover,
+.show-new-inh-acc-button:hover,
+.change-access-period-button:hover,
+.back-to-accounts-button:hover,
+.back-to-accounts-button2:hover {
+  background-color: #1b4c6c;
+}
+
+.base-button:active,
+.show-new-inh-acc-button:active,
+.change-access-period-button:active,
+.back-to-accounts-button:active,
+.back-to-accounts-button2:active {
+  background-color: #0f476d;
+  box-shadow: none;
+}
+
+.acc-button { 
+  background-color: rgb(184, 187, 238);
+  color: black;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  text-decoration: none;
+  padding: 0.7em;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 0.3em;
+  margin-top: 2em;
+  min-height: 300px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+.account {
+  padding: 0.3em;
+  border-radius: 0.3em;
+  position: relative;
+  display: inline-block;
+  text-indent: 1.2em;
+}
+
+.account:before {
+  position: absolute;
+  content: "";
+  background: white;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  left: 0.5em;
+  top: 0.6em;
+}
+
+.popup-overlay,
+.custom-popup-overlay,
+.manage-coins-overlay,
+.change-heir-popup-overlay, 
+.change-time-out-popup-overlay, 
+.top-up-popup-overlay,
+.withdraw-popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it's above other content */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content of the popup */
+.popup-content,
+.inheritance-received-popup-content,
+.custom-token-popup-content,
+.manage-coins-popup-content,
+.change-heir-popup-content, 
+.change-time-out-popup-content, 
+.top-up-popup-content,
+.withdraw-popup-content {
+  background-color: #213345;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+.time-out-years-input, 
+.time-out-months-input, 
+.time-out-days-input, 
+.time-out-hours-input, 
+.time-out-minutes-input,
+.time-out-seconds-input 
+{
+  background: #3e5a70;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 50px;
+  min-height: 20px;
+  text-align: left;
+}
+
+::placeholder {
+  color: white
+}
+
+.div-years,
+.div-months,
+.div-days,
+.div-hours,
+.div-minutes,
+.div-seconds
+{
+  flex: 1;
+  align-items: center;
+}
+
+.label-years,
+.label-months,
+.label-days,
+.label-hours,
+.label-minutes,
+.label-seconds
+{
+  margin-bottom: 5px;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+.parent-for-time-out-control {
+  display: flex;
+  align-items: center;
+}
+
+.under-input-block-holder {
+  display: flex;
+  align-items:center;
+  min-width: 320px;
+  gap: 5px;
+  justify-self: center;
+}
+
+.small-button-in-popup {
+  margin:3px 0 auto auto;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  color: white;
+  background-color: transparent;
+}
+
+
+.flex-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px ;
+  margin: auto;
+}
+
+.flex-child {
+  width: fit-content;
+}
+.flex-child2 {
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.bottom-margin {
+  margin: 0 0 10px 0;
+}
+
+.ellipsify {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.button-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.default-hide,
+.create-acc-status {
+  display: none;
+}
+
+.create-new-acc-success-container {
+  display: none;
+}
+
+.parent-balance-buttons {
+  display: inline-flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.accounts-table-holder {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.parent-for-inlined-buttons {
+  display: inline-flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.account-tokens-block {
+  background: #2a3f4f;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 0.3em;
+}
+
+.parent-sepolia-balance {
+  display: inline-flex;
+  margin: 0 0;
+  padding: 5px 0;
+  background-color: rgb(103, 130, 139);
+  border-radius: 0.3em;
+}
+
+.account-sepolia-balance-symbol,
+.account-sepolia-balance-digit {
+  margin: 0 5px;
+}
+
+.inheritance-account-owner-label,
+.inheritance-account-heir-label {
+  margin-bottom: 0;
+}
+
+.inheritance-account-owner,
+.inheritance-account-heir {
+  margin-top: 5px;
+}
+
+.button-loader,
+.create-acc-button-loader {
+  content: "";
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* TOGGLES */
+
+.toggle-switch {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 24px;
+}
+
+/* Hide default checkbox */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The track */
+.slider {
+    position:absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 24px;
+    width: 50px;
+    height: 100%;
+    transition: background-color 0.3s;
+    left: 0;
+}
+
+/* The circular slider */
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Toggled state */
+.toggle-switch input:checked+.slider {
+    background-color: #4caf50;
+}
+
+.toggle-switch input:checked+.slider::before {
+    transform: translateX(22px);
+}
