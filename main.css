@@ -35,31 +35,38 @@ h1 {
   top: 0px;
   right: 10px;
   display: none;
+  /* align-content: center; */
+  width: 460px;
 }
 
 .parent-for-connected-control {
   display: flex;
-  width: 50%;
+  gap: 10px;
+  justify-content: flex-end;
+  /* width: 50%; */
+  /* width: fit-content; */
 }
 
 .connected-wallet-text {
-  flex: 1;
+  /* flex: 1; */
   border: 1px solid white;
-  margin: 10px;
-  color: white
+  margin: 10px 0;
+  color: white;
+  /* width: fit-content; */
 }
 
-.disconnectButton {
+.disconnect-button {
   flex: 0;
-  background-image: url(/img/logout-128.gif);
-  background-size:auto 100%;
-  min-width: 20px;
+  /* background-image: url(/img/logout-128.gif); */
+  /* background-size:auto 100%; */
+  min-width: 30px;
+  /* min-height: 20px; */
   text-decoration: none;
-  padding: 0.3em;
+  /* padding: 0.3em; */
   text-align: center;
   vertical-align: middle;
   z-index: 9999;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .base-input {
