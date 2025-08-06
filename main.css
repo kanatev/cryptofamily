@@ -1,12 +1,20 @@
+html {
+  padding-left: 15px;
+  padding-right: 15px;
+  /* gap: 15px; */
+}
+
 body {
   margin: 0;
-  display: grid;
-  margin-top: 50px;
+  /* display: grid; */
+  display: block;
+  margin-top: 65px;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  /* width: 60%; */
   background: #3e5a70;
   font-family: "Nunito";
+  justify-content: center;
 }
 
 h1 {
@@ -94,12 +102,20 @@ h1 {
   padding: 4em;
   background: #213345;
   color: white;
-  min-width: 500px;
+  min-width: 450px;
+  max-width: 800px;
   text-align: center;
-  margin: 15px 0 auto 0;
+  /* margin: 15px 0 auto 0; */
+  margin: 15px auto auto auto;
+  /* margin: auto; */
+  /* margin: 15px max(auto, 20px) auto max(auto, 20px); */
 }
 
-.onboard-container {
+.full-height {
+  min-height: 86vh;
+}
+
+/* .onboard-container {
   box-shadow: 10px 10px 30px rgba(137, 27, 27, 0.1);
   border-radius: 0.7em;
   padding: 4em;
@@ -108,7 +124,7 @@ h1 {
   min-width: 500px;
   text-align: center;
   margin: 10px 0 auto 0;
-}
+} */
 
 .account-addresses-block, 
 .account-balance-block, 
@@ -125,7 +141,7 @@ h1 {
   margin-top: 2em;
 }
 
-.base-page-container {
+/* .base-page-container {
   box-shadow: 10px 10px 30px rgba(137, 27, 27, 0.1);
   border-radius: 0.7em;
   padding: 0 4em 30px 4em;
@@ -136,7 +152,7 @@ h1 {
   margin: 10px;
   display: none;
   min-height: 100vh;
-}
+} */
 
 .right-button{
   right: 30px;
@@ -279,7 +295,7 @@ p {
 
 /* Content of the popup */
 .popup-content,
-.inheritance-received-popup-content,
+/* .inheritance-received-popup-content, */
 .custom-token-popup-content,
 .manage-coins-popup-content,
 .change-heir-popup-content, 
