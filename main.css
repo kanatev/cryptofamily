@@ -572,10 +572,13 @@ input:focus::placeholder {
   display: flex;
   border-radius: 0.3em;
   padding: 5px;
+  box-sizing: border-box;
+  /* padding: 5px 0; */
+  /* padding: 8px .8em; */
   background-color: rgb(103, 130, 139);
   /* background: #2a3f4f; */
   min-width: 250px;
-  width: 300px;
+  width: 310px;
   justify-self: center;
   justify-content:space-between;
   margin: 10px 0 10px 0;
@@ -585,6 +588,7 @@ input:focus::placeholder {
   display: flex;
   /* border-radius: 0.3em; */
   padding: 5px;
+  box-sizing: border-box;
   color: lightgray;
   /* background-color: rgb(103, 130, 139); */
   min-width: 250px;
@@ -593,6 +597,7 @@ input:focus::placeholder {
   justify-self: center;
   justify-content:space-between;
   /* margin: 10px 0 10px 0; */
+  gap: 10px;
 }
 
 .token-details-block {
@@ -611,7 +616,7 @@ input:focus::placeholder {
 }
 
 .notification {
-  position:fixed;
+  position: fixed;
   color: lightgreen;
   font-weight: bold;
   font-size: 20px;
@@ -632,6 +637,37 @@ input:focus::placeholder {
   object-fit: contain;
   width: 16px;
   height: 16px;
-  justify-self: center;
-  
+  justify-self: center; 
 }
+
+.zero-margin {
+  margin: 0;
+}
+.popup-paragraph-margin {
+  margin: 20px 0 10px 0;
+}
+
+.transactionElementCell {
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.3em;
+  width: 320px;
+  justify-self: center; 
+}
+
+.transactionScroll {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 30vh;
+  min-height: 250px;
+  width: 340px;
+  gap: 10px;
+  justify-self: center; 
+  /* scrollbar-color: #888 #f1f1f1; */
+  scrollbar-color: lightgray #484848;
+  scrollbar-width: thin; /* or auto or none */
+  /* scrollbar-width: none; */
+}
+
