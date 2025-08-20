@@ -419,6 +419,7 @@ input:focus::placeholder {
 .flex-child2 {
   white-space: nowrap;
   width: fit-content;
+  /* vertical-align: middle; */
 }
 
 .bottom-margin {
@@ -584,6 +585,15 @@ input:focus::placeholder {
   margin: 10px 0 10px 0;
 }
 
+.tx-custom-block {
+  background-color: rgb(65, 88, 96);
+  border-radius: 0.3em;
+  margin: 10px;
+  
+  /* padding: 15px; */
+  /* box-sizing: content-box; */
+}
+
 .token-detail-element-holder {
   display: flex;
   /* border-radius: 0.3em; */
@@ -598,6 +608,18 @@ input:focus::placeholder {
   justify-content:space-between;
   /* margin: 10px 0 10px 0; */
   gap: 10px;
+  /* vertical-align: middle; */
+  align-items: center;
+}
+
+.txCellHeader {
+  /* display: flex;
+  justify-content: space-between; */
+  align-items: center;
+  padding: 5px;
+  color: lightgray;
+  font-weight: bold;
+  /* border-bottom: 1px solid #7aa7c7; */
 }
 
 .token-details-block {
